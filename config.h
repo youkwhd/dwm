@@ -1,7 +1,5 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "./colors/main.h"
-
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -12,6 +10,9 @@ static const char dmenufont[]       = "monospace:size=10";
 /* static const char *fonts[]          = { "JetBrains Mono:size=9", "JoyPixels:pixelsize=12:antialias=true:autohint=true" }; */
 /* static const char dmenufont[]       = "JetBrains Mono:size=9"; */
 
+/* colors variables */
+#include "colors.h"
+
 /* tagging */
 static const char *tags[] = { ">_", "{}", "www", "~/", "₍ᐢ•ﻌ•ᐢ₎", "λ" };
 
@@ -21,7 +22,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
@@ -65,7 +66,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
