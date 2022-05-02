@@ -4,4 +4,5 @@ list of patches applied:
   - cfacts [\[1\]](https://dwm.suckless.org/patches/cfacts)
   - vanitygaps [\[2\]](https://dwm.suckless.org/patches/vanitygaps)
   - inplacerotate [\[3\]](https://dwm.suckless.org/patches/inplacerotate)
+  - pertag [\[4\]](https://dwm.suckless.org/patches/pertag)
 
