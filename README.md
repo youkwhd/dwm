@@ -1,4 +1,5 @@
 personal build of [dwm](https://dwm.suckless.org), consists of personal preference [patches](https://dwm.suckless.org/patches).
+
 build from source `sudo make clean install` or as user, and you're likely good to go.
 
 ## patches
