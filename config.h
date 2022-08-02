@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "colors.h"
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -12,9 +14,6 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=9", "JoyPixels:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrains Mono:size=9";
-
-/* colors variables */
-#include "colors.h"
 
 /* tagging */
 static const char *tags[] = { ">_", "{}", "www", "~/", "₍ᐢ•ﻌ•ᐢ₎", "λ" };
